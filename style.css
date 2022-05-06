@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(120, 174, 206);
+    font-family: 'Inconsolata', monospace;;
+}
+
+section{
+    width: 200px;
+    height: 250px;
+    margin: 100px auto; 
+    border-radius: 10px;
+    background-color: hsl(0, 3%, 90%);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.329);
+    padding: 5px;
+}
+
+div#display{
+    height: 60px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.377);
+    font-size: 20px;
+    padding: 20px 0px 0px 0px;
+}
+
+div.buttons{
+    display: grid;
+    justify-content: center;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto auto;
+    margin: 4px;
+}
+
+.item{
+    min-width: 45px;
+    height: 30px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.item:hover{
+    background-color: hsl(0, 0%, 80%);
+}
+
+.itemAC{
+    grid-column: 1/3;
+    background-color: hsl(0, 100%, 75%);
+}
+
+.itemAC:hover{
+    background-color: hsl(0, 100%, 65%);
+}
+
+.itemEqual{
+    grid-column: 3/5;
+    background-color: hsl(214, 100%, 75%);
+}
+
+.itemEqual:hover{
+    background-color: hsl(214, 100%, 65%);
+}
+
+.itemSignal{
+    background-color: hsl(0, 0%, 80%);
+    font-size: 16px;
+}
+
+.itemSignal:hover{
+    background-color: hsl(0, 0%, 60%);
+}
+
